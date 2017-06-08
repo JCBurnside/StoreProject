@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robots xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="jcburnside.github.io robots.xsd">
+	<robot>
+		<name>The destroyer</name>
+		<description></description>
+		<price>3000.98</price>
+		<imgPath></imgPath>
+	</robot>
+</robots>
