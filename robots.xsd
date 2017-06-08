@@ -5,11 +5,11 @@
 			<xs:element name="robot">
 				<xs:complexType>
 					<xs:sequence>
-						<xs:element type="xs:string" name="name"/>
-						<xs:element type="xs:string" name="description"/>
-						<xs:element type="xs:string" name="imgPath"/>
-						<xs:element type="xs:decimal" name="price"/>
-						<xs:element type="xs:string" name="tags"/>
+						<xs:simpleType type="xs:string" name="name"/>
+						<xs:simpleType type="xs:string" name="description"/>
+						<xs:simpleType type="xs:string" name="imgPath"/>
+						<xs:simpleType type="xs:decimal" name="price"/>
+						<xs:simpleType type="xs:string" name="tags"/>
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
