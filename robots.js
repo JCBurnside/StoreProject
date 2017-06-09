@@ -3,7 +3,7 @@ function load(){
 	var xhttp=new XMLHttpRequest;
 	xhttp.onreadystatechange=function(){
 		if(this.readyState==4&&this.status==200){
-			xml=new XMLFile(this)
+			var TEST=this
 			console.log("READY!!!!!");
 		}
 	}
@@ -17,7 +17,8 @@ function ranNum(start,end){
 	return Math.round(Math.random()*(end-start)+start)
 }
 function XMLFile(respone){
-	this.xmlDoc=respone.responeXML;
+	this.xmlDoc=respone.responseXML
+	console.log(respone)
 	const format="<div class=\"tile\"><img src=\"%s\" alt=\"%s\" height=\"300px\"/><h3>%s</h3><p>%s</p></div>";
 	this.getRandom=function(key){
 		var elements=this.xmlDoc.getElementsByTagName(key)
