@@ -4,6 +4,7 @@ function load(){
 	xhttp.onreadystatechange=function(){
 		if(this.readyState==4&&this.status==200){
 			xml=new XMLFile(this)
+			console.log("READY!!!!!");
 		}
 	}
 	xhttp.open("GET","robots.xml",true);
