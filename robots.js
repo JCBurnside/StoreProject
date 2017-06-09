@@ -3,7 +3,7 @@ function load(){
 	var xhttp=new XMLHttpRequest;
 	xhttp.onreadystatechange=function(){
 		if(this.readyState==4&&this.status==200){
-			var TEST=this
+			xml=new XMLFile(this)
 			console.log("READY!!!!!");
 		}
 	}
