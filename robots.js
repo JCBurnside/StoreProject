@@ -8,7 +8,6 @@ function load(){
 	}
 	xhttp.open("GET","robots.xml",true);
 	xhttp.send();
-	
 }
 function out(){
 	console.log(xml.convertToObjectArray("robot"));
