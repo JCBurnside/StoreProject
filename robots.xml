@@ -2,8 +2,44 @@
 <robots xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="jcburnside.github.io robots.xsd">
 	<robot>
 		<name>The destroyer</name>
-		<description></description>
+		<description>string</description>
+		<imgPath>string</imgPath>
 		<price>3000.98</price>
-		<imgPath></imgPath>
+		<tags>string</tags>
+	</robot>
+	<robot>
+		<name>The destroyer</name>
+		<description>string</description>
+		<imgPath>string</imgPath>
+		<price>3000.98</price>
+		<tags>string</tags>
+	</robot>
+	<robot>
+		<name>The destroyer</name>
+		<description>string</description>
+		<imgPath>string</imgPath>
+		<price>3000.98</price>
+		<tags>string</tags>
+	</robot>
+	<robot>
+		<name>The destroyer</name>
+		<tags>string</tags>
+		<description>string</description>
+		<imgPath>string</imgPath>
+		<price>3000.98</price>
+	</robot>
+	<robot>
+		<name>The destroyer</name>
+		<description>string</description>
+		<imgPath>string</imgPath>
+		<price>3000.98</price>
+		<tags>string</tags>
+	</robot>
+	<robot>
+		<name>The destroyer</name>
+		<description>string</description>
+		<imgPath>string</imgPath>
+		<price>3000.98</price>
+		<tags>string</tags>
 	</robot>
 </robots>
