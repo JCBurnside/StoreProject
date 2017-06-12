@@ -37,7 +37,8 @@ function XMLFile(respone){
 		if(!this.xmlDoc.getElementsByTagName(key))throw key+" doesn't existin xml";
 		let elements=this.xmlDoc.getElementsByTagName(key);
 		console.log(elements)
-		if(!elements.length)throw "Not an array"
+		if(!elements instanceof Array)throw "Not an array"
+		else console.log("IS AN ARRAY")
 		let out=[]
 		elements.forEach((element)=>{
 			out.push(element)
