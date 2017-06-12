@@ -48,7 +48,7 @@ function Robot(XML){
 }
 function MainControl(XML){
 	if(!XML.xmlDoc)throw "NO XML LOADED"
-	const format="<div class=\"tile\"><img src=\"%s\" alt=\"%s\" height=\"300px\"/><h3>%s</h3><p>%s</p><br/><button>%s</button></div>";
+	const format="<div class=\"tile\"><img src=\"%s\" alt=\"%s\" height=\"300px\"/><h3>%s</h3><p>%s</p><br/><button>%d</button></div>";
 	this.ROBOTS=XML.getArrayOf("robot");
 	this.fillMain=function(){
 		let mainSec=document.getElementById("main")
