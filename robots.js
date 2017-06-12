@@ -16,6 +16,14 @@ function out(){
 function ranNum(start,end){
 	return Math.round(Math.random()*(end-start)+start)
 }
+Array.prototype.toString = function() {
+	let out="["
+	this.forEach((element)=>{
+		out+=element+",";
+	})
+	out=out.substr(0,out.length-1);
+	return out;
+};
 function XMLFile(respone){
 	this.xmlDoc=respone.responseXML
 	console.log(respone)
@@ -28,6 +36,8 @@ function XMLFile(respone){
 	this.convertToObjectArray=function(key){
 		if(!this.xmlDoc.getElementsByTagName(key))throw key+" doesn't existin xml";
 		let elements=this.xmlDoc.getElementsByTagName(key);
+		console.log(elements)
+		if(!elements.length)throw "Not an array"
 		let out=[]
 		elements.forEach((element)=>{
 			out.push(element)
