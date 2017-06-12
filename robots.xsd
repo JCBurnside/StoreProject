@@ -1,6 +1,13 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
 <xs:element name="robots" type="robotsType"/>
+<xs:simpleType name="classType">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="tank"/>
+		<xs:enumeration value="drone"/>
+		<xs:enumeration value="wheeled"/>
+	</xs:restriction>
+</xs:simpleType>
 <xs:complexType name="robotType">
 	<xs:all>
 		<xs:element type="xs:string" name="name"/>
@@ -9,7 +16,7 @@
 		<xs:element type="xs:decimal" name="price"/>
 		<xs:element type="xs:string" name="tags"/>
 	</xs:all>
-	<xs:attribute type="xs:string" name="class"/>
+	<xs:attribute name="class" type="classType"/>
 </xs:complexType>
 
 <xs:complexType name="robotsType">

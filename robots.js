@@ -25,24 +25,36 @@ Array.prototype.toString = function() {
 	return out;
 };
 function XMLFile(respone){
-	this.xmlDoc=respone.responseXML
+	this.xmlDoc=respone.responseXML	
 	console.log(respone)
-	const format="<div class=\"tile\"><img src=\"%s\" alt=\"%s\" height=\"300px\"/><h3>%s</h3><p>%s</p></div>";
 	this.getRandom=function(key){
 		var elements=this.xmlDoc.getElementsByTagName(key)
 		if(!elements)throw key+" doesn't exist in loaded xml";
 		return elements[ranNum(0,elements.length)];
 	}
-	this.convertToObjectArray=function(key){
-		if(!this.xmlDoc.getElementsByTagName(key))throw key+" doesn't existin xml";
-		let elements=this.xmlDoc.getElementsByTagName(key);
-		console.log(elements)
-		if(!elements instanceof Array)throw "Not an array"
-		else console.log("IS AN ARRAY")
-		let out=[]
-		elements.forEach((element)=>{
-			out.push(element)
-		})
+	this.getArrayOf=function(key){
+		var out=this.xmlDoc.getElementsByTagName(key);
 		return out;
+	}
+}
+function Robot(XML){
+	if(!XML.getElementsByTagName)throw "NO XML"
+	this.name=XML.getElementsByTagName("name")[0];
+	this.desc=XML.getElementsByTagName("description")[0];
+	this.imgp=XML.getElementsByTagName("imgPath")[0];
+	this.price=XML.getElementsByTagName("price")[0];
+	this.tags=XML.getElementsByTagName("tags")[0];
+	this.class=XML.getAttribute("class");
+}
+function MainControl(XML){
+	if(!XML.xmlDoc)throw "NO XML LOADED"
+	const format="<div class=\"tile\"><img src=\"%s\" alt=\"%s\" height=\"300px\"/><h3>%s</h3><p>%s</p></div>";
+	this.ROBOTS=XML.getArrayOf("robot");
+	this.fillMain=function(){
+		let mainSec=document.getElementById("main")
+		if(!mainSec)throw "NO MAIN ELEMENT"
+		this.ROBOTS.forEach((element)=>{
+			mainSec.innerHTML+='\n'+String.format(format,)
+		});
 	}
 }
