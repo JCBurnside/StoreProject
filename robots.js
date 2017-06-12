@@ -57,7 +57,7 @@ function MainControl(XML){
 		if(!mainSec)throw "NO MAIN ELEMENT"
 		this.ROBOTS.forEach((element)=>{
 			let robot=new Robot(element)
-			mainSec.innerHTML+='\n'+String.format(format,robot.imgp,"Robot",robot.name,robot.desc,robot.price)
+			mainSec.innerHTML+='\n'+('').format(format,robot.imgp,"Robot",robot.name,robot.desc,robot.price)
 		});
 	}
 }
