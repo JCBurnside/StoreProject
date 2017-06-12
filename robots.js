@@ -19,7 +19,7 @@ function ranNum(start,end){
 Array.prototype.toString = function() {
 	let out="["
 	this.forEach((element)=>{
-		out+=element+",";
+		out+=element.toString()+",";
 	})
 	out=out.substr(0,out.length-1);
 	return out;
@@ -43,11 +43,6 @@ function XMLFile(respone){
 		elements.forEach((element)=>{
 			out.push(element)
 		})
-		out.toString=function(){
-			let o="[";
-			this.forEach((i)=>o+=i+",");
-			return o.substr(0,o.length-1)+"]";
-		}
 		return out;
 	}
 }
