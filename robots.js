@@ -33,7 +33,9 @@ function XMLFile(respone){
 		return elements[ranNum(0,elements.length)];
 	}
 	this.getArrayOf=function(key){
-		var out=this.xmlDoc.getElementsByTagName(key);
+		var elements=this.xmlDoc.getElementsByTagName(key);
+		var out=[];
+		for(let ctr=0;ctr<elements.length;ctr++) out.push(elements[ctr])
 		return out;
 	}
 }
