@@ -48,13 +48,14 @@ function Robot(XML){
 }
 function MainControl(XML){
 	if(!XML.xmlDoc)throw "NO XML LOADED"
-	const format="<div class=\"tile\"><img src=\"%s\" alt=\"%s\" height=\"300px\"/><h3>%s</h3><p>%s</p></div>";
+	const format="<div class=\"tile\"><img src=\"%s\" alt=\"%s\" height=\"300px\"/><h3>%s</h3><p>%s</p><br/><button>%s</button></div>";
 	this.ROBOTS=XML.getArrayOf("robot");
 	this.fillMain=function(){
 		let mainSec=document.getElementById("main")
 		if(!mainSec)throw "NO MAIN ELEMENT"
 		this.ROBOTS.forEach((element)=>{
-			mainSec.innerHTML+='\n'+String.format(format,)
+			let robot=new Robot(element)
+			mainSec.innerHTML+='\n'+String.format(format,robot.imgp,"Robot",robot.name,robot.desc,robot.price)
 		});
 	}
 }
