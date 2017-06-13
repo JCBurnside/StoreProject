@@ -3,30 +3,33 @@
 <head>
 	<title>Bits and Bots</title>
 	<!--<link rel="stylesheet" type="text/css" href="index.css">-->
+	<script src="https://ajax.googleapis.com/ajx/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="resources/lib/bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+	<script src="resources/lib/bootstrap-3.3.7-dist/js/bootsrap.min.js"></script>
 	<script type="text/javascript">
 		document.getElementsByTagName('head')[0].innerHTML+=("<link rel=\"stylesheet\" type=\"text/css\" href=\""+document.URL.substring(0,document.URL.lastIndexOf("/"))+"/index.css\"/>")
 	</script>
 	<script type="text/javascript" src="robots.js"></script>
+	<!-- <div class="tile"><img src="" alt="IMAGE HERE" height="300px"/><h3></h3><p></p></div> -->
 </head>
 <body>
 	<header>
 		<button id="comissionBtn"></button>
 	</header>
-	<section id="left">
-		<div class="tile"><img src="" alt="IMAGE HERE" height="300px"/><h3></h3><p></p></div>
-		<div class="tile"><img src="" alt="IMAGE HERE" height="300px"/><h3></h3><p></p></div>
-		<div class="tile"><img src="" alt="IMAGE HERE" height="300px"/><h3></h3><p></p></div>
-	</section>
-	<section id="pop-up">
-		<!-- this will be hidden unless cam is live-->
-	</section>
-	<section id="main">
-		<div class="tile"><img src="" alt="IMAGE HERE" height="300px"/><h3></h3><p></p></div>
+	<section id="middle" class="row">
+		<div class="col-3 hidden-sm" id="left">
+			<div class="tile"><img src="" alt="IMAGE HERE" height="300px"/><h3></h3><p></p></div>
+			<div class="tile"><img src="" alt="IMAGE HERE" height="300px"/><h3></h3><p></p></div>
+			<div class="tile"><img src="" alt="IMAGE HERE" height="300px"/><h3></h3><p></p></div>
+		
+		</div>
+		<div class="col-9" id="main">
 		<div class="tile"><img src="" alt="IMAGE HERE" height="300px"/><h3></h3><p></p></div>
 		<div class="tile"><img src="" alt="IMAGE HERE" height="300px"/><h3></h3><p></p></div>
 		<div class="tile"><img src="" alt="IMAGE HERE" height="300px"/><h3></h3><p></p></div>
 		<div class="tile"><img src="" alt="IMAGE HERE" height="300px"/><h3></h3><p></p></div>
-		<!-- TODO Example bots-->
+		
+		</div>
 	</section>
 	<footer>
 		&copy;2017 made by James Burnside
