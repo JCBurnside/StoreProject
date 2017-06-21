@@ -3,9 +3,10 @@
 <head>
 	<title>Bits and Bots</title>
 	<!--<link rel="stylesheet" type="text/css" href="index.css">-->
-	<script src="https://ajax.googleapis.com/ajx/libs/jquery/1.12.4/jquery.min.js"></script>
-	<link rel="stylesheet" href="resources/lib/bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
-	<script src="resources/lib/bootstrap-3.3.7-dist/js/bootsrap.min.js"></script>
+	<script type="text/javascript" src="0.00_jquery_setup.js"></script>
+	<link rel="stylesheet" href="resources/lib/	bootstrap-3.3.7-dist/css/bootstrap.min
+	.css"/>
+	<script src="resources/lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript">
 		document.getElementsByTagName('head')[0].innerHTML+=("<link rel=\"stylesheet\" type=\"text/css\" href=\""+document.URL.substring(0,document.URL.lastIndexOf("/"))+"/index.css\"/>")
 	</script>
@@ -17,17 +18,18 @@
 		<button id="comissionBtn"></button>
 	</header>
 	<section id="middle" class="row">
-		<div class="col-3 hidden-sm" id="left">
-			<div class="tile"><img src="" alt="IMAGE HERE" height="300px"/><h3></h3><p></p></div>
-			<div class="tile"><img src="" alt="IMAGE HERE" height="300px"/><h3></h3><p></p></div>
-			<div class="tile"><img src="" alt="IMAGE HERE" height="300px"/><h3></h3><p></p></div>
-		
+		<div class="col-md-3 hidden-sm hidden-xs" style="background-color: green;height: 300px">
+		<div class="row">
+			<div class="col-12 tile"><img src="" alt="IMAGE HERE" height="300px"/><h3></h3><p></p></div>
+			<div class="col-12 tile"><img src="" alt="IMAGE HERE" height="300px"/><h3></h3><p></p></div>
+			<div class="col-12 tile"><img src="" alt="IMAGE HERE" height="300px"/><h3></h3><p></p></div>
 		</div>
-		<div class="col-9" id="main">
-		<div class="tile"><img src="" alt="IMAGE HERE" height="300px"/><h3></h3><p></p></div>
-		<div class="tile"><img src="" alt="IMAGE HERE" height="300px"/><h3></h3><p></p></div>
-		<div class="tile"><img src="" alt="IMAGE HERE" height="300px"/><h3></h3><p></p></div>
-		<div class="tile"><img src="" alt="IMAGE HERE" height="300px"/><h3></h3><p></p></div>
+		</div>
+		<div class="col-md-9" style="background-color: red;height: 300px">
+			<div class="tile"><img src="" alt="IMAGE HERE" height="300px"/><h3></h3><p></p></div>
+			<div class="tile"><img src="" alt="IMAGE HERE" height="300px"/><h3></h3><p></p></div>
+			<div class="tile"><img src="" alt="IMAGE HERE" height="300px"/><h3></h3><p></p></div>
+			<div class="tile"><img src="" alt="IMAGE HERE" height="300px"/><h3></h3><p></p></div>
 		
 		</div>
 	</section>
